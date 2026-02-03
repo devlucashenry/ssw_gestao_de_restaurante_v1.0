@@ -1,63 +1,65 @@
-🍴 SSW (Saga Sistema Web) - Sistema de Gestão para Restaurantes Versão: 1.0.0
+# 🍴 SSW (Saga Sistema Web) - Gestão para Restaurantes
 
-Status: Em Desenvolvimento 🚧
+> **Versão:** 1.0.0 (MVP - Authentication & Infrastructure)  
+> **Status:** Em Desenvolvimento 🚧
 
-O SSW é um protótipo Full Stack que esta sendo desenvolvida para otimizar o fluxo de atendimento em restaurantes.
+O **SSW** é um protótipo Full Stack desenvolvido para otimizar o fluxo de atendimento em restaurantes. Esta primeira etapa focou na construção de uma base sólida utilizando operações CRUD e as melhores práticas de engenharia de software.
 
-Essa primeira parte foi desenvolvida usando operações CRUD e boas práticas de desenvolvimento de software.
+---
 
-As fases consistiram em:
-Requisitos do sistema;
-Requisitos do Software;
-Análise;
-Design do Programa;
-Programação;
-Teste;
-Operações.
+## 📖 Metodologia de Desenvolvimento
 
-De acordo com o livro "Desenvolvimento Ágil Limpo" de Robert C. Martin
+O projeto foi estruturado seguindo os princípios do livro **"Desenvolvimento Ágil Limpo" de Robert C. Martin**, garantindo um código sustentável e bem planejado. O ciclo de desenvolvimento consistiu em:
 
-🚀 Funcionalidades
+1.  **Requisitos do Sistema** (Necessidades do negócio)
+2.  **Requisitos do Software** (Tradução técnica)
+3.  **Análise** (Modelagem de dados)
+4.  **Design do Programa** (Arquitetura de componentes)
+5.  **Programação** (Implementação Clean Code)
+6.  **Teste** (Validação de fluxos)
+7.  **Operações** (Deploy e conectividade local)
 
-Autenticação: Sistema de login validando credenciais no MySQL.
-Conexão Mobile-Desktop: Arquitetura configurada para permitir acesso via Rede Local (Wi-Fi), transformando o PC em um servidor central acessível por celulares.
-Dashboard Responsivo: Interface com Menu Lateral Fixo.
-Performance de Banco: Implementação de Connection Pools no Node.js para gerenciar múltiplas conexões simultâneas.
+---
 
-🛠 Arquitetura e Tecnologias
+## 🚀 Funcionalidades
 
-O projeto segue a arquitetura Cliente-Servidor (REST API).
+* **Autenticação:** Sistema de login com validação de credenciais via MySQL.
+* **Conexão Mobile-Desktop:** Arquitetura configurada para acesso via Rede Local (Wi-Fi), transformando o PC em um servidor central acessível por dispositivos móveis.
+* **Dashboard Responsivo:** Interface moderna com Menu Lateral Fixo para navegação intuitiva.
+* **Performance de Banco:** Implementação de `Connection Pools` no Node.js para gerenciamento eficiente de múltiplas conexões simultâneas.
 
-Frontend (Cliente):
-React.js (Single Page Application)
-React Router Dom (Navegação)
-CSS Modules / Grid Layout
+---
 
-Backend (Servidor):
-Node.js & Express
-MySQL2 (com Promises e Connection Pool)
-Dotenv (Gerenciamento de variáveis de ambiente)
-Clean Code Principles (Async/Await)
-Banco de Dados: MySQL 
+## 🛠 Arquitetura e Tecnologias
 
-🔐 Ambiente (.env)
+O projeto segue o modelo **Cliente-Servidor** utilizando uma **REST API** para comunicação.
 
-Por segurança, as credenciais do banco não ficam no código. Criei um arquivo chamado .env e essas informações são importadas no backend
+### **Frontend (Cliente)**
+* **React.js:** Single Page Application (SPA) para uma experiência de usuário fluida.
+* **React Router Dom:** Gerenciamento dinâmico de rotas e navegação.
+* **CSS Modules / Grid Layout:** Estilização organizada e sistema de grades responsivo.
 
-Configuração do Servidor
+### **Backend (Servidor)**
+* **Node.js & Express:** Ambiente de execução e framework para rotas de alta performance.
+* **MySQL2:** Driver com suporte a *Promises* e *Connection Pool*.
+* **Dotenv:** Segurança no gerenciamento de variáveis de ambiente.
+* **Clean Code:** Aplicação de princípios de código limpo com *Async/Await*.
+
+### **Banco de Dados**
+* **MySQL:** Armazenamento relacional robusto.
+
+---
+
+## 🔐 Configuração de Ambiente (.env)
+
+Por segurança, as credenciais sensíveis do banco de dados não são versionadas. Para rodar o projeto, crie um arquivo `.env` na raiz do backend seguindo o modelo:
+
+```env
+# Configuração do Servidor
 PORT=5000
 
-Configuração do Banco de Dados
+# Configuração do Banco de Dados
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=sua_senha_mysql
 DB_NAME=gestao
-
-
-
-
-
-
-
-
-
