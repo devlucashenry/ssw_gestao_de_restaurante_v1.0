@@ -1,0 +1,29 @@
+.layout-container {
+  display: flex;      /* Coloca Menu e Conteúdo lado a lado */
+  height: 100vh;      /* Ocupa a altura total da janela */
+  width: 100vw;
+  background-color: #d2e3fc; /* Fundo cinza claro da área de conteúdo */
+  overflow: hidden;   /* Remove barra de rolagem da janela inteira */
+}
+
+.layout-content {
+  flex: 1;            /* Ocupa todo o espaço restante (Direita) */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;   /* PERMITE ROLAGEM apenas no conteúdo, menu fica parado */
+}
+
+.top-bar {
+  background-color: #ffffff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+  flex-shrink: 0;
+}
+
+.page-content {
+  padding: 10px; /* Espaço interno para as páginas não colarem na borda */
+}

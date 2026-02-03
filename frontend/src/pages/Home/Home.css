@@ -1,0 +1,59 @@
+.dashboard-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.home-header {
+  margin-bottom: 15px;
+}
+
+.home-header h1 {
+  color: #1a1a2e;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.home-header p {
+  color: #666;
+}
+
+/* Organização em Grid para os Cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.welcome-card {
+  grid-column: 1 / -1; /* Faz o card de boas-vindas ocupar a linha toda */
+  background: linear-gradient(135deg, #1a1a2e 0%, #30305a 100%);
+  color: white;
+  border: none;
+}
+
+.welcome-card h3 {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

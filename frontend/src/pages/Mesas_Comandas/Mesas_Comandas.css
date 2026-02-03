@@ -1,0 +1,91 @@
+.mesas-container {
+  padding: 5px;
+  width: 100%;
+}
+
+.mesas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000000;
+}
+
+.mesas-header h1 {
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.legenda span {
+  margin-left: 15px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-livre {
+  background-color: #1f8a38; /* Verde */
+  color: white;
+}
+
+.status-ocupada {
+  background-color: #d12839; /* Vermelho */
+  color: white;
+}
+
+/* --- A MÁGICA DO GRID --- */
+.mesas-grid {
+  display: grid;
+  /* Cria colunas automáticas. 
+     minmax(150px, 1fr) significa: cada quadrado tem no mínimo 150px, 
+     mas pode crescer para ocupar o espaço livre. */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; /* Espaço entre os quadrados */
+}
+
+/* O Quadrado da Mesa */
+.mesa-card {
+  background-color: #ffffff;
+  border: 2px solid #000000; /* Borda verde indicando Livre */
+  border-radius: 15px;
+  height: 130px; /* Altura fixa para ser quadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.26);
+}
+
+.mesa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.521);
+  background-color: #ff5e0085; /* Fundo levemente verde no hover */
+}
+
+.mesa-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.mesa-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.mesa-status {
+  font-size: 0.85rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Exemplo de mesa ativa/selecionada */
+.mesa-card.ativa {
+  border-color: #007bff;
+  background-color: #e3f2fd;
+}
