@@ -1,8 +1,8 @@
-#🍴 SSW (Saga Sistema Web) - Sistema de Gestão para Restaurantes Versão: 1.0.0
+🍴 SSW (Saga Sistema Web) - Sistema de Gestão para Restaurantes Versão: 1.0.0
 
 Status: Em Desenvolvimento 🚧
 
-#O SSW é um protótipo Full Stack que esta sendo desenvolvida para otimizar o fluxo de atendimento em restaurantes.
+O SSW é um protótipo Full Stack que esta sendo desenvolvida para otimizar o fluxo de atendimento em restaurantes.
 
 Essa primeira parte foi desenvolvida usando operações CRUD e boas práticas de desenvolvimento de software.
 
@@ -17,14 +17,14 @@ Operações.
 
 De acordo com o livro "Desenvolvimento Ágil Limpo" de Robert C. Martin
 
-#🚀 Funcionalidades
+🚀 Funcionalidades
 
 Autenticação: Sistema de login validando credenciais no MySQL.
 Conexão Mobile-Desktop: Arquitetura configurada para permitir acesso via Rede Local (Wi-Fi), transformando o PC em um servidor central acessível por celulares.
 Dashboard Responsivo: Interface com Menu Lateral Fixo.
 Performance de Banco: Implementação de Connection Pools no Node.js para gerenciar múltiplas conexões simultâneas.
 
-#🛠 Arquitetura e Tecnologias
+🛠 Arquitetura e Tecnologias
 
 O projeto segue a arquitetura Cliente-Servidor (REST API).
 
@@ -40,14 +40,14 @@ Dotenv (Gerenciamento de variáveis de ambiente)
 Clean Code Principles (Async/Await)
 Banco de Dados: MySQL 
 
-#🔐 Ambiente (.env)
+🔐 Ambiente (.env)
 
-Por segurança, as credenciais do banco não ficam no código. Criei um arquivo chamado .env e essas informações são importadas no backend.
+Por segurança, as credenciais do banco não ficam no código. Criei um arquivo chamado .env e essas informações são importadas no backend
 
-# Configuração do Servidor
+Configuração do Servidor
 PORT=5000
 
-# Configuração do Banco de Dados
+Configuração do Banco de Dados
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=sua_senha_mysql
