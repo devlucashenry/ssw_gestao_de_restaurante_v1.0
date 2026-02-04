@@ -3,7 +3,7 @@
 > **Versão:** 1.0.0 (MVP - Authentication & Infrastructure)  
 > **Status:** Em Desenvolvimento 🚧
 
-O **SSW** é um protótipo Full Stack desenvolvido para otimizar o fluxo de atendimento em restaurantes. Esta primeira etapa focou na construção de uma base sólida utilizando operações CRUD e as melhores práticas de engenharia de software.
+O **SSW** é um protótipo Full Stack desenvolvido para otimizar o fluxo de atendimento em restaurantes. Esta primeira etapa focou na construção de uma base sólida de conhecimento utilizando operações CRUD e as melhores práticas de engenharia de software.
 
 ---
 
